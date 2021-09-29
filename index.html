@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html lang="ru">
-
     <head>
         <title>MyGallery</title>
         <meta charset="UTF-8">
@@ -15,47 +14,67 @@
         <p>created by Milena Alekseeva</p>
     </div>
 
-    <div class="navbar">
+    <nav class="navbar">
     <a href="#">Main</a>
     <a href="#">About</a>
     <a href="#">Gallery</a>
     <a href="#">Contact</a>
     <a href="#" class="right">search
     </a>
-    </div>
+</nav>
 
     <div class="row">
 
         <div class="side">
-            <h2><span>About Me</span></h2>
+            <section><h2>About Me<h2></section>
             <h3><strong>Milena Leonova</strong></h3>
             <img src="Pictures/me.jpeg" alt="Milen" style="width: 242px; height: 360px;"> 
-            <p>Hello! I am student of ITMO and this is my lab for web. Welcome to my page!</p>
-            <h3>Contact Info:</h3>
-            <p>email: e5capada@yandex.ru</p>
-            <p>tel: 8-921-***-**-**</p>
+            <p>Hello! I am student of <strong>ITMO</strong> and this is my lab for web. Welcome to my page!</p>
+            
+            <section><h3>Contact Info:</h3></section>
+            <ul>
+                <li>email: e5capada@yandex.ru</li>
+                <li>tel: 8-921-***-**-**</li>
+                <li>St Petersburg</li>
+            </ul>
 
             <div class="contact">
+                <section><h3>Questions?</h3></section>
                 <form action="action_page.php">
                   <label for="fname">Name:</label>
                   <input type="text" id="fname" name="firstname" placeholder="Your name..">
               
                   <label for="lname">Email:</label>
-                  <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+                  <input type="text" id="lname" name="lastname" placeholder="Your email..">
             
                   <label for="subject">Subject</label>
                   <textarea id="subject" name="subject" placeholder="Write something.." ></textarea>
               
                   <input type="submit" value="Submit">
-              
                 </form>
               </div>
-        
+              <span>
+              <p>
+    ...................／＞　 フ.....................<br>
+              　　　　　| 　_　 _|<br>
+              　 　　　／`ミ _x 彡<br>
+              　　 　 /　　　 　 |<br>
+              　　　 /　 ヽ　　 ﾉ<br>
+              　／￣|　　 |　|　|<br>
+              　| (￣ヽ＿_ヽ_)_)<br>
+              　＼二つ</p>
+              </span>
         </div>
 
         <div class="main">
-            <h2>MY ART</h2>
-            <p><q>We know the truth, not only by the reason, but also by the heART.</q> - Blaise Pascal</p>
+            <section align=center><h2>MY WORK</h2></section>
+            <blockquote align=right>
+                <p>We know the truth, not only by the reason, but also by the heART.<P> 
+                <cite> Blaise Pascal</cite>
+            </blockquote>
+
+            <p align=center style="background-color: #DFE166;">coffe<sup>2</sup> + inspiration = art<p>
+            <section align=center"><h2>MY GALLERY</h2></section>
             <div class="gallery"> 
                 <div class="column">
                 <img src="Pictures/pic4.jpg" width="30%" height="98%">
@@ -74,7 +93,16 @@
                     <img src="Pictures/pic6.jpg" width="30%">
                     <img src="Pictures/pic1.jpg" width="30%">
                 </div>
-        </div>
+            </div>
+
+            <article align=center><p>Tkank you for visiting my page! I hope you enjoy my art!</p></article>
+            <pre><code>
+                if(inspiration == true){
+                    art.create();
+                } else{
+                    do_Coffe();
+                }
+            </code></pre>
         </div>
         </div>
     </div>    
@@ -87,7 +115,3 @@
 
 </body>
 </html>
-
-
-
-
