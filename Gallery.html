@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>SingapourTravelBlog</title>
+    <meta charset="UTF-8">
+
+    <link href="https://unpkg.com/flickity@2/dist/flickity.min.css" rel="stylesheet">
+    <link href="CSS/main.css" rel="stylesheet">
+    <link href="CSS/gallery.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header id="header">
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a class='logo' href='#'>LOGO</a></li>
+                <li><a href='index.html'>Home</a></li>
+                <li><a class='dropdown-arrow' href='http://'>About</a>
+                    <ul class='sub-menus'>
+                        <li><a href='http://'>Food</a></li>
+                        <li><a href='http://'>Location</a></li>
+                        <li><a href='http://'>Attractions</a></li>
+                    </ul>
+                </li>
+                <li><a href='ContactUs.html'>Our Team</a></li>
+                <li><a class='active' href='http://'>Gallery</a></li>
+                <li><a href='ToDoList.html'>ToDoList</a></li>
+                <li><a href='Review.html'>Review</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main id="main">
+        <p class="heading">Gallery</p>
+
+        <div class="carousel" data-flickity='{ "autoPlay": true }'>
+            <div class="carousel-cell">
+                <img src="images/gallery5.jpg" alt="" />
+            </div>
+            <div class="carousel-cell">
+                <img src="images/gallery2.jpg" alt="" />
+            </div>
+            <div class="carousel-cell">
+                <img src="images/gallery3.jpg" alt="" />
+            </div>
+            <div class="carousel-cell">
+                <img src="images/gallery4.jpg" alt="" />
+            </div>
+            <div class="carousel-cell">
+                <img src="images/gallery1.jpg" alt="" />
+            </div>
+            <div class="carousel-cell">
+                <img src="images/gallery6.jpg" alt="" />
+            </div>
+        </div>
+    </main>
+
+    <footer id="footer">
+        <section id="contact">
+            <h2>Any questions left?</h2>
+            <h4>We will be happy to answer any questions you may have
+            </h4>
+            <form class="forminline ">
+                <label for="name ">Name:</label>
+                <input type=" " id="name " placeholder="Enter name " name="name ">
+                <label for="email ">Email:</label>
+                <input type="email " id="email " placeholder="Enter email " name="email ">
+                <button type="submit ">Submit</button>
+            </form>
+        </section>
+
+        <h3>Page load time in JavaScript:</h3>
+        <div>
+            <span id="loadtime "></span>
+        </div>
+        <script src="JS/pageTime.js "></script>
+
+        <ul class="icons ">
+            <li><a href="# " class="icon alt fa-twitter "><span class="label ">Twitter</span></a></li>
+            <li><a href="# " class="icon alt fa-facebook "><span class="label ">Facebook</span></a></li>
+            <li><a href="# " class="icon alt fa-instagram "><span class="label ">Instagram</span></a></li>
+            <li><a href="# " class="icon alt fa-github "><span class="label ">GitHub</span></a></li>
+            <li><a href="# " class="icon alt fa-envelope "><span class="label ">Email</span></a></li>
+        </ul>
+
+
+        <div class="copyrights ">
+            <p>© Mil.Leon, 2021</p>
+        </div>
+    </footer>
+
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js ">
+    </script>
+
+</body>
+
+</html>

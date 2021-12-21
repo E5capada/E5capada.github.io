@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <title>SingapourTravelBlog</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="CSS/main.css">
+    <link rel="stylesheet" href="CSS/review.css">
+
+
+    <!--<link rel="stylesheet" href="outline_prototype_safe.css">-->
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
+
+    <header id="header">
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a class='logo' href='#'>LOGO</a></li>
+                <li><a href='index.html'>Home</a></li>
+                <li><a class='dropdown-arrow' href='http://'>About</a>
+                    <ul class='sub-menus'>
+                        <li><a href='http://'>Food</a></li>
+                        <li><a href='http://'>Location</a></li>
+                        <li><a href='http://'>Attractions</a></li>
+                    </ul>
+                </li>
+                <li><a href='ContactUs.html'>Our Team</a></li>
+                <li><a href='Gallery.html'>Gallery</a></li>
+                <li><a href='ToDoList.html'>ToDoList</a></li>
+                <li><a class='active' href='Review.html'>Review</a></li>
+        </nav>
+
+        <div class="TopBannerImage">
+            <div id="TopBannerText">
+                <h1>Reviews</h1>
+            </div>
+        </div>
+    </header>
+
+
+    <main id="main">
+
+        <div id="main_card">
+            <div class="card">
+                <h2>Fantastic Place to Visit</h2>
+                <hr style="border-color: rgb(0, 0, 0);">
+                <div class="card-body" id="card-body">
+                    <p>What a fantastic place to visit, this must be the place to go if you want to see a society where respect still exists. Singapore is one of the cleanest and safest countries we have ever visited, the MRT (underground) is not only a
+                        very efficient and cheap way of seeing Singapore City, it is a pleasure to be able to move about in a foreign city without fear of crime
+                    </p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>A week in Singapore</h2>
+                <hr style="border-color: rgb(0, 0, 0);">
+                <div class="card-body" id="card-body">I recently spent a week in Singapore for Business. I would return happily for more business trips, but not for a vacation. I would recommend it as a long layover for people flying through the area.</div>
+            </div>
+
+            <div id="cards">
+                <div id="preloader" class="card preloader disabled">
+                    <img class="preloader-img" src="icons/Flying airplane.gif">
+                </div>
+            </div>
+
+            <template id="one-card">
+                            <div class="card">
+                                <h2></h2>
+                                <hr style="border-color: rgb(0, 0, 0);">
+                                <div class="card-body" id="card-body"></div>
+                            </div>
+                        </template>
+
+            <div class="button">
+                <button id="add-card">Read more reviews</button>
+            </div>
+            <script src="JS/review.js"></script>
+
+    </main>
+
+    <footer id="footer">
+        <ul class="icons ">
+            <li><a href="# " class="icon alt fa-twitter "><span class="label ">Twitter</span></a></li>
+            <li><a href="# " class="icon alt fa-facebook "><span class="label ">Facebook</span></a></li>
+            <li><a href="# " class="icon alt fa-instagram "><span class="label ">Instagram</span></a></li>
+            <li><a href="# " class="icon alt fa-github "><span class="label ">GitHub</span></a></li>
+            <li><a href="# " class="icon alt fa-envelope "><span class="label ">Email</span></a></li>
+        </ul>
+
+        <div class="copyrights ">
+            <p>© Mil.Leon, 2021</p>
+        </div>
+
+    </footer>
+
+
+    <script>
+        window.onload = function() {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function() {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+</body>
+
+</html>

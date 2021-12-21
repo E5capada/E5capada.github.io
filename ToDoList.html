@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>
+        To Do List
+    </title>
+
+    <link href="CSS/main.css" rel="stylesheet">
+    <link href="CSS/ToDoList.css" rel="stylesheet">
+    <script src="JS/ToDoList.js"></script>
+</head>
+
+<body>
+
+    <header id="header">
+        <nav id='menu'>
+            <input type='checkbox' id='responsive-menu' onclick='updatemenu()'><label></label>
+            <ul>
+                <li><a class='logo' href='#'>LOGO</a></li>
+                <li><a href='index.html'>Home</a></li>
+                <li><a class='dropdown-arrow' href='http://'>About</a>
+                    <ul class='sub-menus'>
+                        <li><a href='http://'>Food</a></li>
+                        <li><a href='http://'>Location</a></li>
+                        <li><a href='http://'>Attractions</a></li>
+                    </ul>
+                </li>
+                <li><a href='ContactUs.html'>Our Team</a></li>
+                <li><a href='Gallery.html'>Gallery</a></li>
+                <li><a class='active' href='ToDoList.html'>ToDoList</a></li>
+                <li><a href='Review.html'>Review</a></li>
+            </ul>
+        </nav>
+
+        <div class="TopBannerImage">
+            <div id="TopBannerText">
+                <h1>My To Do List</h1>
+            </div>
+        </div>
+    </header>
+
+    <div id="todo-wrap">
+
+        <form id="todo-add">
+            <input type="text" id="todo-item" placeholder="I want to..." required/>
+            <input type="submit" id="todo-save" value="Add" />
+        </form>
+
+        <div id="todo-del">
+            <input type="button" value="Delete All" id="todo-delall" />
+            <input type="button" value="Delete Completed" id="todo-delcom" />
+        </div>
+
+        <div id="todo-list"></div>
+    </div>
+
+    <footer id="footer">
+        <section id="contact">
+            <h2>Any questions left?</h2>
+            <h4>We will be happy to answer any questions you may have
+            </h4>
+            <form class="forminline ">
+                <label for="name ">Name:</label>
+                <input type="" id="name " placeholder="Enter name " name="name ">
+                <label for="email ">Email:</label>
+                <input type="email " id="email " placeholder="Enter email " name="email ">
+                <button type="submit ">Submit</button>
+            </form>
+        </section>
+
+        <h3>Page load time in JavaScript:</h3>
+        <div>
+            <span id="loadtime"></span>
+        </div>
+        <script src="pageTime.js"></script>
+
+        <ul class="icons ">
+            <li><a href="# " class="icon alt fa-twitter "><span class="label ">Twitter</span></a></li>
+            <li><a href="# " class="icon alt fa-facebook "><span class="label ">Facebook</span></a></li>
+            <li><a href="# " class="icon alt fa-instagram "><span class="label ">Instagram</span></a></li>
+            <li><a href="# " class="icon alt fa-github "><span class="label ">GitHub</span></a></li>
+            <li><a href="# " class="icon alt fa-envelope "><span class="label ">Email</span></a></li>
+        </ul>
+
+        <div class="copyrights ">
+            <p>© Mil.Leon, 2021</p>
+        </div>
+    </footer>
+
+</body>
+
+</html>
