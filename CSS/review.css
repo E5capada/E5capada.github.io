@@ -1,0 +1,78 @@
+    .preloader-img {
+        height: 40px;
+        margin-left: 40%;
+    }
+    
+    .card.preloader.disabled {
+        display: none;
+    }
+    
+    #footer {
+        height: 100px;
+    }
+    
+    .TopBannerImage {
+        background: url(backgrounds/tg-1.jpg);
+        background-repeat: no-repeat;
+        height: 350px;
+        background-position: top;
+        background-size: cover;
+        position: relative;
+        margin-top: 30px;
+        z-index: auto;
+    }
+    
+    #TopBannerText {
+        text-align: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: white;
+        text-shadow: rgb(1, 1, 59) -1px -2px 0.5em;
+    }
+    
+    #TopBannerText h1 {
+        font-size: 60px;
+    }
+    
+    .card {
+        border: 2px solid #ccc;
+        background-color: white;
+        border-radius: 5px;
+        padding: 16px;
+        margin: 16px 0;
+    }
+    
+    .card::after {
+        content: "";
+        clear: both;
+        display: table;
+    }
+    
+    #main {
+        margin-top: 0;
+        top: 0;
+    }
+    
+    #add-card {
+        border: 3px solid purple;
+        background-color: white;
+        padding: 14px 28px;
+        font-size: 16px;
+        cursor: pointer;
+        color: rgb(219, 103, 190);
+    }
+    
+    .button {
+        margin: 0;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+    }
+    
+    #add-button:hover {
+        color: pink;
+    }
